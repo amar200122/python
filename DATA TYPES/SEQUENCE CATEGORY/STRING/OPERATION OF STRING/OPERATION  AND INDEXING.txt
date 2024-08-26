@@ -1,0 +1,54 @@
+
+====================================================================================================================
+						Operations on str data
+=====================================================================================================================
+=>On str data,We can perform Two Types of Operations. They are
+
+				1. Indexing Operation
+				2. Slicing Operation
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+1. Indexing Operation
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+=>The Process of Obtaining One Value / Character from given str object by passing Index Value is called Indexing.
+=>Syntax:  strobj[ Index ]
+=>Here strobj is an object of <class, 'str'>
+=>Here Index can be either +VE or -VE
+=>If we Enter Valid Index then we get Corresponding value / character of that Index
+=>If we Enter Invalid Index then we get IndexError.
+--------------------
+Examples
+--------------------
+>>> s="PYTHON"
+>>> print(s,type(s))---------PYTHON <class 'str'>
+>>> s[0]-----------------'P'
+>>> s[1]-----------------'Y'
+>>> s[5]-----------------'N'
+>>> s[4]-----------------'O'
+>>> s[2]-----------------'T'
+>>> s[3]-----------------'H'
+>>> s[-6]----------------'P'
+>>> s[-1]----------------'N'
+>>> s[-2]---------------'O'
+>>> s[-5]----------------'Y'
+>>> s[-3]----------------'H'
+>>> s[-4]----------------'T'
+>>> s[True]-------------'Y'
+>>> s[-True]-----------'N'
+>>> s[False]-----------'P'
+>>> s[-False]----------'P'
+>>> s[10]----------------IndexError: string index out of range
+>>> s[-10]---------------IndexError: string index out of range
+>>> s[0b1010-9]-------'Y'
+>>> s[0x1]--------------'Y'
+>>> s[-(0xF-14)]------'N'
+----------------------
+>>> "JAVA"[-1]------------'A'
+>>> "JAVA"[-4]------------'J'
+>>> "HYDERABAD"[0o1]-------'Y'
+>>> "HYDERABAD"[0b1]-------'Y'
+>>> "HYDERABAD"[0x1]-------'Y'
+>>> "HYDERABAD"[01]------SyntaxError: leading zeros in decimal integer literals are not permitted;
+>>> "Paypall"[02]-------------SyntaxError: leading zeros in decimal integer literals are not permitted
+
+>>> "Paypall"[2]------------'y'
+-----------------------------------------------------------------------------------------------------
